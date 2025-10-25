@@ -1,0 +1,423 @@
+/* VARIABLES DE COLOR */
+:root {
+    --color-blue-dark: #001f3f; 
+    --color-blue-medium: #1a4386; 
+    --color-celeste: #57b0f5; 
+    --color-green: #3D9970; 
+    --color-white: #ffffff;
+    --color-text-light: #f4f4f4;
+}
+
+/* ESTILOS GLOBALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--color-white); 
+    line-height: 1.6;
+    
+    background: linear-gradient(180deg, var(--color-celeste) 0%, var(--color-blue-medium) 100%);
+    background-attachment: fixed; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: var(--color-white);
+}
+
+/* SECCIONES DE CONTENIDO  */
+.content-section {
+    padding: 80px 0;
+    
+    background-color: transparent; 
+}
+
+
+.dark-blue-bg {
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    padding: 80px 0;
+}
+.dark-blue-bg h2 {
+    color: var(--color-celeste);
+}
+
+/* NAVEGACIÓN  */
+nav {
+    position: fixed; 
+    top: 0;          
+    z-index: 1001;   
+    width: 100%;     
+    background-color: var(--color-blue-dark); 
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--color-celeste);
+    color: var(--color-blue-dark);
+    border-radius: 50px;
+}
+
+/* CABECERA (HEADER) */
+.main-header {
+    height: 60vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    
+    padding-top: 60px; 
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-text-box {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 5em;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main-header p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+}
+
+
+/* SECCIÓN CONÓCENOS */
+.section-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info-box {
+    flex-basis: 45%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info-box h3 {
+    color: var(--color-blue-medium);
+    margin-bottom: 15px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border-radius: 10px;
+    flex-basis: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: default;
+}
+
+
+.service-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.service-card h4 {
+    color: var(--color-celeste);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+/* SECCIÓN PAQUETES */
+.packages-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.package-card {
+    flex-basis: 30%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.package-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--color-white);
+    text-align: center;
+    transition: background 0.3s;
+}
+
+/* SECCIÓN PORTAFOLIO */
+.portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.portfolio-item {
+    flex-basis: 45%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item h3 {
+    color: var(--color-blue-medium);
+    margin-bottom: 15px;
+}
+
+.btn-portfolio {
+    display: inline-block;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-portfolio:hover {
+    background-color: #307a56; 
+}
+
+/* SECCIÓN CONTÁCTANOS (Formulario) */
+#contactanos .container {
+    max-width: 700px;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-celeste);
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-celeste);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white); 
+}
+
+
+#contact-form select option {
+    background-color: var(--color-blue-dark); 
+    color: var(--color-white);
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#contact-form button:hover {
+    background-color: #307a56;
+}
+
+#form-status {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.social-links a {
+    color: var(--color-celeste);
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--color-green);
+}
+
+/* MODAL (Ventana Emergente) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000; /* Alto z-index para estar sobre todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: var(--color-white); 
+    margin: 5% auto; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    /*  Obliga al texto a ser oscuro para anular la herencia del body */
+    color: var(--color-blue-dark); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; 
+}
+
+.modal-content h4 {
+    /* Título del paquete */
+    color: var(--color-blue-medium); 
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#modal-price {
+    /* Precio del paquete */
+    font-size: 1.5em;
+    color: var(--color-green); 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.modal-content hr {
+    border-color: #ddd;
+    margin: 15px 0;
+}
+
+#modal-includes {
+    /* Lista de elementos que incluye el paquete */
+    list-style: disc;
+    margin-left: 20px;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+#modal-includes li {
+    margin-bottom: 8px;
+    color: var(--color-blue-dark); /* Color específico para los ítems */
+}
+
+.close-btn {
+    color: var(--color-text-dark);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: red;
+    text-decoration: none;
+}
+
+.btn-contact-modal {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-blue-medium);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-contact-modal:hover {
+    background-color: var(--color-blue-dark);
+}

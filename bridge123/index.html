@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGE - Tu Puente al Mundo Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        
+        (function() {
+            emailjs.init("f6Tz6In3Izd1JtXho"); 
+        })();
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a href="#conocenos">Conócenos</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contactanos">Contáctanos</a>
+    </nav>
+
+    <header class="main-header" id="home">
+        <div class="header-overlay" style="background-image: url('https://t4.ftcdn.net/jpg/10/24/71/81/360_F_1024718171_QQGCFF5Lu1OliSkH9xcMtj2L23l1co5y.jpg');">
+            
+            <div class="header-text-box">
+                <h1>BRIDGE</h1>
+                <p>TU PUENTE AL MUNDO DIGITAL</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <section id="conocenos" class="content-section">
+        <div class="container">
+            <h2>Conócenos</h2>
+            <div class="section-content">
+                <div class="info-box">
+                    <h3>¿Quiénes Somos?</h3>
+                    <p>Somos BRIDGE, una red de programadores bolivianos apasionados por la tecnología y el diseño. Nuestro objetivo es conectar a los emprendedores y negocios locales con el mundo digital, ofreciendo soluciones accesibles, confiables y personalizadas. Creemos que cada proyecto es una oportunidad para construir un puente entre las ideas y la presencia online, ayudando a nuestros clientes a crecer, innovar y destacar con identidad propia.</p>
+                </div>
+                <div class="info-box">
+                    <h3>¿Qué Hacemos?</h3>
+                    <p>En BRIDGE creamos sitios web modernos, funcionales y adaptados a cada necesidad. Acompañamos a nuestros clientes en todo el proceso digital: desde la planificación y el diseño, hasta el soporte técnico y la actualización de su página. Más que un servicio, ofrecemos una experiencia completa que impulsa la visibilidad, la confianza y el crecimiento de cada emprendimiento en internet. Contamos con oficina física para atender personalmente a nuestros clientes.</p>
+                </div>
+            </div>
+
+            <h3>Nuestros Servicios Generales</h3>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <h4>Creación de Página Web</h4>
+                    <p>Diseñamos sitios web personalizados, accesibles y funcionales que reflejan la identidad y objetivos de cada negocio, tambien contamos con imagenes libres de derechos de autor.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <h4>Asesoramiento y Estrategia</h4>
+                    <p>Guiamos a los clientes para definir la mejor estructura, diseño y estrategia digital según su tipo de negocio.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <h4>Soporte Técnico Especializado</h4>
+                    <p>Ofrecemos asistencia básica después de la entrega para asegurar el correcto funcionamiento de cada sitio.</p>
+            
+                </div>
+                <div class="service-card" data-tilt>
+                    <h4>Actualización</h4>
+                    <p>Si después de la entrega de tu página web deseas añadir, modificar o mejorar algún elemento, contamos con planes de actualización adaptados a tus necesidades. El precio varía según el tipo y la cantidad de cambios que desees realizar, garantizando siempre calidad y acompañamiento profesional. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paquetes" class="content-section">
+        <div class="container">
+            <h2>Nuestros Paquetes</h2>
+            <div class="packages-grid">
+                
+                <div class="package-card" style="background-image: url('Imagenes/paquetebasico.png');" onclick="openModal('basico')">
+                    <div class="package-overlay">
+                        <h3>Paquete Básico</h3>
+                    </div>
+                </div>
+
+                <div class="package-card" style="background-image: url('Imagenes/paquetemedio.png');" onclick="openModal('medio')">
+                    <div class="package-overlay">
+                        <h3>Paquete Medio</h3>
+                    </div>
+                </div>
+
+                <div class="package-card" style="background-image: url('Imagenes/paquetepro.png');" onclick="openModal('pro')">
+                    <div class="package-overlay">
+                        <h3>Paquete Pro</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="content-section">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item">
+                    <h3>AGRIPARTES</h3>
+                    <p>Importación y distribución de partes y piezas para maquinaria agricola</p>
+                    <a href="URL_DEL_CLIENTE_1" target="_blank" class="btn-portfolio">Ver Sitio del Cliente</a>
+                </div>
+                
+                <div class="portfolio-item">
+                    <h3>GOLDEN VELVET</h3>
+                    <p>Centro de belleza</p>
+                    <a href="URL_DEL_CLIENTE_2" target="_blank" class="btn-portfolio">Ver Sitio del Cliente</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contactanos" class="dark-blue-bg">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="from_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="from_email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="phone">
+
+                <label for="servicio">Servicio de Interés:</label>
+                <select id="servicio" name="service_interest" required>
+                    <option value="" disabled selected>Selecciona un Paquete</option>
+                    <option value="Paquete Básico">Paquete Básico</option>
+                    <option value="Paquete Medio">Paquete Medio</option>
+                    <option value="Paquete Pro">Paquete Pro</option>
+                    <option value="Otro">Actualización</option>
+                </select>
+
+                <label for="presupuesto">Presupuesto Estimado:</label>
+                <input type="text" id="presupuesto" name="budget" placeholder="$60 - $500">
+
+                <label for="mensaje">Mensaje (Detalles de tu proyecto):</label>
+                <textarea id="mensaje" name="message" rows="5" required></textarea>
+
+                <button type="submit" id="send-button">Enviar Mensaje</button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+ 
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15193.045935344833!2d-63.203100000000006!3d-17.826373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e9d5f846aad3%3A0xbff4e89289b545f6!2sLuis%20Don%20Malo%20218%2C%20Santa%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses-419!2sbo!4v1761317750348!5m2!1ses-419!2sbo" width="650" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/_bridge123?igsh=MTIxY3puY2F1aXJycQ==" target="_blank" aria-label="Instagram BRIDGE">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580521257241" target="_blank" aria-label="Facebook BRIDGE">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="package-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        
+        <h4 id="modal-title"></h4>
+        <p id="modal-price"></p>
+        <hr>
+        <ul id="modal-includes"></ul>
+        
+        <button class="btn-contact-modal" onclick="contactAndClose()">Contáctanos</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
